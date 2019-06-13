@@ -10,8 +10,11 @@
 
 int main()
 {
-    int a,b,c;
-    scanf("%d%d%d",&a,&b,&c);
-    printf("a=%d,b=%d,c=%d",a,b,c);
+    float value1,value2,value3;
+    value1=2.3;
+    value2=4.5;
+    value3=6.7;
+    printf("the average of %f and %f and %f is %f \n",value1,value2,value3,(value1+value2+value3)/3.0);
+    
     return 0;
 }
