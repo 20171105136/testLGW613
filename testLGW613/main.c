@@ -10,11 +10,12 @@
 
 int main()
 {
-    float value1,value2,value3;
-    value1=2.3;
-    value2=4.5;
-    value3=6.7;
-    printf("the average of %f and %f and %f is %f \n",value1,value2,value3,(value1+value2+value3)/3.0);
-    
+    FILE *fp = NULL;
+    fp = fopen("test.txt", "r");
+    if(fp == NULL)
+    {
+        printf("File open error !\n");
+    }
+
     return 0;
 }
